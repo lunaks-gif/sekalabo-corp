@@ -276,6 +276,20 @@ ul { list-style: none; }
 .biz-app__chip em { font-family: var(--latin); font-style: normal; font-size: .66rem; letter-spacing: .1em; color: var(--ink); background: var(--yellow); padding: 3px 9px; border-radius: 999px; }
 
 /* =========================================================
+   CLIENTS / 取引実績
+   ========================================================= */
+.clients { background: transparent; }
+.logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(138px, 1fr)); gap: 16px; max-width: 980px; margin-inline: auto; }
+.logo-cell {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  height: 112px; display: flex; align-items: center; justify-content: center; padding: 18px 22px;
+  box-shadow: var(--shadow-sm); transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
+}
+.logo-cell:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: #F3DFA8; }
+.logo-cell img { max-width: 100%; max-height: 54px; width: auto; height: auto; object-fit: contain; }
+.clients__note { text-align: center; margin-top: 22px; font-size: .76rem; color: var(--ink-mute); letter-spacing: .04em; }
+
+/* =========================================================
    MEMBERS / CEO
    ========================================================= */
 .members { background: transparent; }
