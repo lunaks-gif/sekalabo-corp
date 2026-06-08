@@ -264,8 +264,8 @@ ul { list-style: none; }
    ========================================================= */
 .members { background: transparent; }
 .ceo-frame { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); background: var(--white); }
-.ceo-photo { aspect-ratio: 4/5; display: flex; align-items: flex-end; justify-content: center; padding: 28px; background: linear-gradient(150deg, #FFE6B8, #FFC79A 55%, #FFB59B); font-family: var(--serif); font-size: 1.3rem; font-weight: 700; color: rgba(32,32,28,.55); letter-spacing: .1em; }
-.ceo-photo img, .ceo-photo--img { width: 100%; height: 100%; object-fit: cover; }
+.ceo-photo { aspect-ratio: 4/5; overflow: hidden; background: linear-gradient(155deg, #FFE6B8, #FFC79A 55%, #FFB59B); }
+.ceo-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 14%; display: block; }
 .ceo-name { padding: 18px 24px; }
 .ceo-name strong { font-family: var(--serif); font-size: 1.2rem; font-weight: 700; letter-spacing: .08em; display: block; }
 .ceo-name span { font-size: .8rem; color: var(--ink-mute); }
