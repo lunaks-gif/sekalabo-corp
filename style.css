@@ -279,8 +279,9 @@ ul { list-style: none; }
    CLIENTS / 取引実績
    ========================================================= */
 .clients { background: transparent; }
-.logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(138px, 1fr)); gap: 16px; max-width: 980px; margin-inline: auto; }
+.logo-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; max-width: 1000px; margin-inline: auto; }
 .logo-cell {
+  flex: 1 1 150px; min-width: 140px; max-width: 200px;
   background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
   height: 112px; display: flex; align-items: center; justify-content: center; padding: 18px 22px;
   box-shadow: var(--shadow-sm); transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
