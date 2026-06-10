@@ -29,6 +29,22 @@
     });
   }
 
+  // Scrollspy: highlight nav link for the section in view
+  var navLinks = nav ? Array.prototype.slice.call(nav.querySelectorAll('.nav__link')) : [];
+  var spied = navLinks
+    .map(function (l) { var id = l.getAttribute('href'); return id && id.charAt(0) === '#' ? { link: l, sec: document.querySelector(id) } : null; })
+    .filter(function (x) { return x && x.sec; });
+  if (spied.length && 'IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          spied.forEach(function (s) { s.link.classList.toggle('is-active', s.sec === entry.target); });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    spied.forEach(function (s) { spy.observe(s.sec); });
+  }
+
   // Reveal on scroll
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
