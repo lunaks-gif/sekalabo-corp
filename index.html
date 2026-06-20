@@ -32,10 +32,9 @@
   <link rel="preload" as="image" href="/assets/hero-city.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-  <!-- Structured data: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -89,16 +88,20 @@
     <div class="hero__media" aria-hidden="true"></div>
     <div class="hero__inner">
       <div class="hero__copy reveal">
-        <p class="eyebrow">SINCE 2024  ·  SAPPORO, HOKKAIDO</p>
+        <p class="eyebrow">SINCE 2024  ·  SAPPORO, HOKKAIDO  ·  JAPAN</p>
         <h1 class="hero__title">
           <span class="hero__line">言語を超えて、</span>
-          <span class="hero__line">世界を変える人を育てる。</span>
+          <span class="hero__line">世界を変える</span>
+          <span class="hero__line">人を育てる。</span>
         </h1>
         <p class="hero__lead">
           子どもから大人まで、ことばの力で<br class="pc-br">
           世界に踏み出す力を、札幌から届けます。
         </p>
-        <a href="#about" class="btn btn--outline btn--lg">SEKALABÖ について<span class="arr">→</span></a>
+        <div class="hero__actions">
+          <a href="#about" class="btn btn--outline btn--lg">私たちについて <span class="arr">→</span></a>
+          <a href="#business" class="hero__sub-link">事業内容を見る <span class="arr">→</span></a>
+        </div>
       </div>
     </div>
     <div class="hero__scroll" aria-hidden="true">
@@ -114,11 +117,12 @@
       <span>言語を超えて、世界を変える人を育てる。</span><span class="dot">·</span>
       <span>Bridging language, culture, and possibility — from Sapporo to the world.</span><span class="dot">·</span>
       <span>子どもから大人まで、ことばの力で世界へ。</span><span class="dot">·</span>
-      <!-- duplicate for seamless loop -->
+      <span>Education × Language × Technology — SEKALABÖ</span><span class="dot">·</span>
       <span>Nurturing the power to live and the power of words, lighting the way to the future.</span><span class="dot">·</span>
       <span>言語を超えて、世界を変える人を育てる。</span><span class="dot">·</span>
       <span>Bridging language, culture, and possibility — from Sapporo to the world.</span><span class="dot">·</span>
       <span>子どもから大人まで、ことばの力で世界へ。</span><span class="dot">·</span>
+      <span>Education × Language × Technology — SEKALABÖ</span><span class="dot">·</span>
     </div>
   </div>
 
@@ -150,7 +154,23 @@
     </div>
   </div>
 
-  <!-- ========== ABOUT / VISION STATEMENT ========== -->
+  <!-- ========== VISION STATEMENT ========== -->
+  <section class="vision-statement">
+    <div class="container">
+      <div class="vision__inner reveal">
+        <p class="vision__label">FOUNDER'S VISION</p>
+        <blockquote class="vision__quote">"ことばは橋になる。"</blockquote>
+        <p class="vision__body">
+          右も左もわからない外国の地で、<br>
+          たったひとつのことばが孤独を消し、扉を開く。<br>
+          私たちが届けたいのは、そんな「ことばの力」です。
+        </p>
+        <cite class="vision__cite">嘉瀬 瑠奈 ／ 代表取締役&emsp;SEKALABÖ</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / PHILOSOPHY ========== -->
   <section class="about section" id="about">
     <div class="container">
       <div class="section-head section-head--center reveal">
@@ -159,9 +179,13 @@
       </div>
 
       <div class="about__text reveal">
-        <p>「生きる力」とは、毎日おきる、楽しいことも苦しいことも、自分のための糧としていく力だと私たちは考えます。</p>
-        <p>ちょっとむずかしいことにも「やってみよう」と思える。失敗しても「またやってみよう」と思える。そして「わたしはこれでいいんだ」と思える——。</p>
-        <p class="about__emphasis">“わたしはきっとできる” という小さな芽を、<br>“みんなといっしょにできる” という大きな力へ。</p>
+        <p>「生きる力」とは、毎日おきる楽しいことも苦しいことも、自分のための糧としていく力だと私たちは考えます。</p>
+        <p>ちょっとむずかしいことにも「やってみよう」と思える。失敗しても「またやってみよう」と思える。そして「わたしはこれでいいんだ」と思える——。そんな内発的な力こそが、人を世界へ踏み出させる原動力だと信じています。</p>
+        <p>ことばはその力を何倍にも広げてくれる。知らない人に話しかけ、知らない文化に触れ、知らない世界に飛び込む。その一歩を支えるのが、私たちの仕事です。</p>
+      </div>
+
+      <div class="about__pull reveal">
+        <p>"わたしはきっとできる" という小さな芽を、<br>"みんなといっしょにできる" という大きな力へ。</p>
       </div>
 
       <div class="creed-head reveal">
@@ -169,96 +193,90 @@
         <h3 class="creed-headline">私たちが大切にしている、3つのこと。</h3>
       </div>
 
-      <div class="creed-grid reveal">
-        <article class="creed creed--service">
+      <div class="creed-grid">
+        <article class="creed creed--service reveal">
           <span class="creed__en">Spirit of Service</span>
           <span class="creed__jp">サービスの精神</span>
-          <h4 class="creed__title">希望の芽を咲かせ、<br>言語を超えて世界を変える人を育てます。</h4>
-          <p class="creed__desc">私たちは人の未知なる可能性を見出し、信じ、育み、自信を持って世界に飛び立ち、人生を変える学びの場を提供し続けていきます。</p>
+          <h4 class="creed__title">希望の芽を咲かせ、言語を超えて世界を変える人を育てます。</h4>
+          <p class="creed__desc">私たちは人の未知なる可能性を見出し、信じ、育み、自信を持って世界に飛び立ち、人生を変える学びの場を提供し続けます。</p>
         </article>
-        <article class="creed creed--society">
+        <article class="creed creed--society reveal">
           <span class="creed__en">Promise to Society</span>
           <span class="creed__jp">社会とのお約束</span>
-          <h4 class="creed__title">導き照らす太陽となり、<br>生きる喜び溢れる世界をつくります。</h4>
-          <p class="creed__desc">どんな困難な状況にあっても、太陽のように人々を照らす暖かな想いで導き、生きる気力に溢れた人生を送れる社会創りを目指しています。</p>
+          <h4 class="creed__title">導き照らす太陽となり、生きる喜び溢れる世界をつくります。</h4>
+          <p class="creed__desc">どんな困難な状況にあっても、太陽のように人々を照らす暖かな想いで導き、生きる気力に溢れた人生を送れる社会創りを目指します。</p>
         </article>
-        <article class="creed creed--team">
+        <article class="creed creed--team reveal">
           <span class="creed__en">Team Spirit</span>
           <span class="creed__jp">チームとしてのあり方</span>
-          <h4 class="creed__title">互いを愛しみ、幸せを祝福し、<br>笑顔のみちを歩みます。</h4>
+          <h4 class="creed__title">互いを愛しみ、幸せを祝福し、笑顔のみちを歩みます。</h4>
           <p class="creed__desc">私たちは自らも互いも大切に想い、些細な幸せも祝い合う心を持ち、共に歩んでいくチームです。</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ========== BUSINESS (tiles) ========== -->
+  <!-- ========== BUSINESS (bento grid) ========== -->
   <section class="business section" id="business">
     <div class="container">
       <div class="section-head reveal">
         <p class="section-label">03  OUR BUSINESS</p>
-        <h2 class="section-title">ことばを軸に、子どもから大人まで。</h2>
-        <p class="section-intro">乳幼児から大人、そして海外から日本へ来る人まで。<br>人生のあらゆる段階で「学び」と「ことば」に寄り添います。</p>
+        <h2 class="section-title">4つの柱で、ことばの未来を拓く。</h2>
+        <p class="section-intro">乳幼児から大人、そして日本語を学ぶ外国人まで。<br class="pc-br">ことばが必要なすべての人に寄り添います。</p>
       </div>
 
-      <!-- 子ども向け -->
-      <div class="biz-group reveal">
-        <div class="biz-group__head">
-          <span class="biz-group__label">FOR CHILDREN</span>
-          <h3 class="biz-group__title">子どもたちへ</h3>
-          <p class="biz-group__desc">遊びと物語を入り口に、考える力と英語力を同時に育てます。</p>
-        </div>
-        <div class="biz-cards">
-          <article class="biz-card">
-            <span class="biz-card__tag">オンライン英語教室</span>
-            <h4 class="biz-card__title">SEKALABÖ KIDS 英語教室</h4>
-            <p class="biz-card__desc">3〜12歳対象。物語×ゲームの冒険で、考える力と英語力を同時に育てるオンライン少人数レッスン。</p>
-            <a href="https://sekalabo-kids-lp.vercel.app" class="link-arrow" target="_blank" rel="noopener">教室サイトを見る<span class="arr">↗</span></a>
-          </article>
-          <article class="biz-card">
-            <span class="biz-card__tag">カリキュラム提供・講師派遣</span>
-            <h4 class="biz-card__title">カリキュラム提供／講師派遣</h4>
-            <p class="biz-card__desc">幼稚園・学校などへ、英語カリキュラムの提供とバイリンガル講師の派遣。遊びの中で自然に英語とふれあう「本物の体験」を届けます。</p>
-            <a href="#contact" class="link-arrow">お問い合わせ<span class="arr">→</span></a>
-          </article>
-        </div>
-      </div>
+      <div class="bento-grid reveal">
 
-      <!-- 大人向け -->
-      <div class="biz-group reveal">
-        <div class="biz-group__head">
-          <span class="biz-group__label">FOR ADULTS</span>
-          <h3 class="biz-group__title">大人へ</h3>
-          <p class="biz-group__desc">「伝える力」を軸に、仕事と暮らしで使えることばを育てます。</p>
-        </div>
-        <div class="biz-cards">
-          <article class="biz-card">
-            <span class="biz-card__tag">法人研修</span>
-            <h4 class="biz-card__title">法人研修</h4>
-            <p class="biz-card__desc">企業向けの語学・グローバル人材研修。実践で使えるコミュニケーション力と、異文化に踏み出す「伝える力」を育てます。</p>
-            <a href="#contact" class="link-arrow">お問い合わせ<span class="arr">→</span></a>
-          </article>
-          <article class="biz-card">
-            <span class="biz-card__tag">日本語学校</span>
-            <h4 class="biz-card__title">外国人向け日本語学校</h4>
-            <p class="biz-card__desc">日本で暮らし、働き、学ぶ人へ。生活と仕事に根ざした日本語教育で、新しい土地での一歩を支えます。</p>
-            <a href="#contact" class="link-arrow">お問い合わせ<span class="arr">→</span></a>
-          </article>
-        </div>
-      </div>
+        <article class="bento bento--kids">
+          <span class="bento__num" aria-hidden="true">01</span>
+          <span class="bento__tag">FOR CHILDREN / ONLINE</span>
+          <h3 class="bento__title">SEKALABÖ KIDS<br>子ども英語教室</h3>
+          <p class="bento__desc">3〜12歳対象。物語×ゲームの冒険で、考える力と英語力を同時に育てるオンライン少人数レッスン。英語を「勉強」ではなく「体験」として届けます。</p>
+          <ul class="bento__list">
+            <li>物語ベースのイマーシブ型カリキュラム</li>
+            <li>4名以下の少人数クラス</li>
+            <li>週1〜2回 / 25分集中レッスン</li>
+          </ul>
+          <a href="https://sekalabo-kids-lp.vercel.app" target="_blank" rel="noopener" class="bento__link bento__link--light">教室サイトへ <span class="arr">↗</span></a>
+        </article>
 
-      <!-- 付随するプロダクト開発 -->
-      <div class="biz-app reveal">
-        <div class="biz-app__body">
-          <span class="biz-app__label">PRODUCT DEVELOPMENT</span>
-          <h3 class="biz-app__title">学びに寄り添う、アプリと教材の開発。</h3>
-          <p class="biz-app__desc">それぞれの事業に付随して、童話×英語の学習アプリやオリジナル教材を自社で開発しています。子ども向けレッスンの予習・復習から、日本語学習や法人研修の教材まで——現場の学びを支えるプロダクトを、事業ごとにつくっています。</p>
+        <article class="bento bento--teacher">
+          <span class="bento__num" aria-hidden="true">02</span>
+          <span class="bento__tag">SCHOOLS & KINDERGARTENS</span>
+          <h3 class="bento__title">講師派遣・<br>カリキュラム提供</h3>
+          <p class="bento__desc">幼稚園・保育園・学校などへ、英語カリキュラムの提供とバイリンガル講師の派遣。遊びの中で自然に英語とふれあう「本物の体験」を届けます。</p>
+          <a href="#contact" class="bento__link">お問い合わせ <span class="arr">→</span></a>
+        </article>
+
+        <article class="bento bento--corp">
+          <span class="bento__num" aria-hidden="true">03</span>
+          <span class="bento__tag">CORPORATE TRAINING</span>
+          <h3 class="bento__title">法人研修・<br>語学トレーニング</h3>
+          <p class="bento__desc">企業向けの語学・グローバル人材研修。実践的なコミュニケーション力と、異文化に踏み出す「伝える力」を育てます。</p>
+          <a href="#contact" class="bento__link">お問い合わせ <span class="arr">→</span></a>
+        </article>
+
+        <article class="bento bento--japanese">
+          <span class="bento__num" aria-hidden="true">04</span>
+          <span class="bento__tag">JAPANESE LANGUAGE SCHOOL</span>
+          <h3 class="bento__title">外国人向け<br>日本語学校</h3>
+          <p class="bento__desc">日本で暮らし、働き、学ぶ人へ。生活と仕事に根ざした日本語教育で、新しい土地での確かな一歩を支えます。外国にルーツを持つ子どもへの教育支援も行っています。</p>
+          <a href="#contact" class="bento__link">お問い合わせ <span class="arr">→</span></a>
+        </article>
+
+        <div class="bento bento--app">
+          <div class="bento__app-body">
+            <span class="bento__app-label">PRODUCT DEVELOPMENT</span>
+            <h3 class="bento__app-title">アプリ・教材開発</h3>
+            <p class="bento__app-desc">各事業に付随して、童話×英語の学習アプリやオリジナル教材を自社開発。現場の学びを支えるプロダクトをつくっています。</p>
+          </div>
+          <div class="bento__chips">
+            <span class="bento__chip">KIDS 学習アプリ <em>Coming Soon</em></span>
+            <span class="bento__chip">オリジナル教材</span>
+            <span class="bento__chip">日本語学習コンテンツ</span>
+          </div>
         </div>
-        <div class="biz-app__tags">
-          <span class="biz-app__chip">KIDS 学習アプリ <em>Coming Soon</em></span>
-          <span class="biz-app__chip">オリジナル教材</span>
-          <span class="biz-app__chip">日本語学習コンテンツ</span>
-        </div>
+
       </div>
     </div>
   </section>
@@ -269,7 +287,7 @@
       <div class="section-head section-head--center reveal">
         <p class="section-label">04  CLIENTS &amp; PARTNERS</p>
         <h2 class="section-title">取引実績</h2>
-        <p class="section-intro">業種を問わず、さまざまな企業・団体さまと取り組んでいます。</p>
+        <p class="section-intro">食品・小売・観光・教育・研究機関など、業種を問わず多様なパートナーと取り組んでいます。</p>
       </div>
       <div class="logo-marquee reveal" aria-label="取引先ロゴ">
         <div class="logo-track">
@@ -316,12 +334,17 @@
         </div>
 
         <div class="split__body reveal">
-          <h3 class="members__headline">世界に出て感じたのは、<br>英語力ではなく<span class="mark mark--peach">「伝える力」</span>。</h3>
+          <h3 class="members__headline">世界に出て感じたのは、<br>英語力ではなく<span class="mark mark--peach">「伝える力」</span>の重さ。</h3>
           <div class="members__text">
             <p>小・中学校における長期欠席者数は49万人（2024年）。30年間変わらぬ英語教育に、漠然とした不安を感じる方も多いはずです。</p>
             <p>私自身、学生の頃は居場所が見つからず、高校も中退しました。そんな時、唯一私に興味を持たせてくれたのが英語でした。勉強が楽しかったのではなく、英語を通じて感じた世界の広さが、自分の可能性の広さも見せてくれた。色とりどりの生き方を肌で感じたことが、何よりも楽しかったのです。</p>
             <blockquote class="members__quote">「英語が私にくれたのはスキルではなく、人生をもっと広い視点で探求し、強く生きるチャンスでした。」</blockquote>
             <p>いちばん大切なのは、自分の気持ちを異文化の相手に伝える、その一歩を踏み出す力。世界にある可能性と、生きる楽しさを、自ら見出してほしい。その想いで事業を続けています。</p>
+          </div>
+          <div class="members__tags">
+            <span class="members__tag">元・高校中退</span>
+            <span class="members__tag">英語×世界で自分を発見</span>
+            <span class="members__tag">札幌から世界へ</span>
           </div>
         </div>
       </div>
@@ -336,18 +359,38 @@
           <p class="section-label">06  NEWS</p>
           <h2 class="section-title">お知らせ</h2>
         </div>
+        <a href="#news" class="btn btn--ghost news__more">すべて見る <span class="arr">→</span></a>
       </div>
       <ul class="news-list reveal">
         <li class="news-item">
           <time class="news-item__date">2026.06.09</time>
           <span class="news-item__cat">お知らせ</span>
           <p class="news-item__title">コーポレートサイトを公開しました。</p>
+          <span class="arr">→</span>
+        </li>
+        <li class="news-item">
+          <time class="news-item__date">2026.05.20</time>
+          <span class="news-item__cat">事業</span>
+          <p class="news-item__title">SEKALABÖ KIDS 英語教室のトライアルレッスン申込みを開始しました。</p>
+          <span class="arr">→</span>
+        </li>
+        <li class="news-item">
+          <time class="news-item__date">2026.04.15</time>
+          <span class="news-item__cat">パートナー</span>
+          <p class="news-item__title">北海道大学との連携プログラムが始動。留学生向け日本語教育サポートを開始します。</p>
+          <span class="arr">→</span>
+        </li>
+        <li class="news-item">
+          <time class="news-item__date">2026.04.01</time>
+          <span class="news-item__cat">お知らせ</span>
+          <p class="news-item__title">株式会社L.S.Aを設立しました。SEKALABÖ のブランドで教育事業を本格始動します。</p>
+          <span class="arr">→</span>
         </li>
       </ul>
     </div>
   </section>
 
-  <!-- ========== COMPANY INFO (trio) ========== -->
+  <!-- ========== COMPANY INFO ========== -->
   <section class="company section" id="company">
     <div class="container">
       <div class="section-head reveal">
@@ -369,6 +412,9 @@
           <dt>所在地</dt><dd>北海道 札幌市</dd>
         </div>
         <div class="profile__row">
+          <dt>連絡先</dt><dd><a href="mailto:info@lsainc.jp" class="profile__link">info@lsainc.jp</a></dd>
+        </div>
+        <div class="profile__row">
           <dt>事業内容</dt>
           <dd>幼稚園・保育園への講師派遣／外国人向け日本語学校の運営／<br class="pc-br">子ども向けオンライン英語教室／学習アプリの開発／大人向け語学サービス</dd>
         </div>
@@ -379,31 +425,31 @@
     </div>
   </section>
 
-  <!-- ========== CONTACT (trio) ========== -->
+  <!-- ========== CONTACT ========== -->
   <section class="contact" id="contact">
     <div class="container contact__inner">
       <div class="reveal">
         <p class="section-label section-label--light">CONTACT</p>
         <h2 class="contact__title">ことばの力で、<br class="sp-br">未来を一緒に照らしませんか。</h2>
-        <p class="contact__lead">講師派遣・日本語教育・教室や教材に関するご相談、協業のお問い合わせはこちらから。</p>
+        <p class="contact__lead">講師派遣・日本語教育・教室や教材に関するご相談、協業のお問い合わせはこちらから。どんな小さなことでもお気軽にどうぞ。</p>
       </div>
       <div class="contact-cards reveal">
         <a href="mailto:info@lsainc.jp" class="contact-card">
           <span class="contact-card__icon">✉️</span>
           <strong class="contact-card__title">お問い合わせ</strong>
-          <span class="contact-card__desc">ご相談・ご質問はメールで</span>
+          <span class="contact-card__desc">ご相談・ご質問はメールで<br>通常2営業日以内にご返信</span>
           <span class="link-arrow">メールする<span class="arr">→</span></span>
         </a>
         <a href="mailto:info@lsainc.jp?subject=資料請求" class="contact-card">
           <span class="contact-card__icon">📄</span>
           <strong class="contact-card__title">資料請求</strong>
-          <span class="contact-card__desc">事業案内の資料をお送りします</span>
+          <span class="contact-card__desc">事業案内の資料をお送りします<br>法人向け・学校向けに対応</span>
           <span class="link-arrow">請求する<span class="arr">→</span></span>
         </a>
         <a href="https://sekalabo-kids-lp.vercel.app" target="_blank" rel="noopener" class="contact-card">
           <span class="contact-card__icon">🧒</span>
           <strong class="contact-card__title">英語教室を見る</strong>
-          <span class="contact-card__desc">SEKALABÖ KIDS の詳細はこちら</span>
+          <span class="contact-card__desc">SEKALABÖ KIDS の詳細はこちら<br>無料トライアル随時受付中</span>
           <span class="link-arrow">サイトへ<span class="arr">↗</span></span>
         </a>
       </div>
@@ -419,6 +465,7 @@
         </a>
         <p class="footer__tagline">生きる力とことばの力を育て、未来を照らす。</p>
         <p class="footer__addr">株式会社L.S.A ／ 北海道 札幌市</p>
+        <a href="mailto:info@lsainc.jp" class="footer__email">info@lsainc.jp</a>
       </div>
       <nav class="footer__nav" aria-label="サイトマップ">
         <div class="footer__col">
@@ -426,6 +473,7 @@
           <ul>
             <li><a href="#about">理念</a></li>
             <li><a href="#business">事業内容</a></li>
+            <li><a href="#clients">取引実績</a></li>
             <li><a href="#members">メンバー</a></li>
             <li><a href="#news">お知らせ</a></li>
             <li><a href="#company">会社情報</a></li>
@@ -436,9 +484,10 @@
           <p class="footer__col-title">SERVICE</p>
           <ul>
             <li><a href="https://sekalabo-kids-lp.vercel.app" target="_blank" rel="noopener">SEKALABÖ KIDS 英語教室 ↗</a></li>
-            <li><a href="#business">講師派遣</a></li>
-            <li><a href="#business">日本語学校</a></li>
-            <li><a href="#business">大人向け語学</a></li>
+            <li><a href="#business">講師派遣・カリキュラム提供</a></li>
+            <li><a href="#business">外国人向け日本語学校</a></li>
+            <li><a href="#business">法人研修・語学トレーニング</a></li>
+            <li><a href="#business">アプリ・教材開発</a></li>
           </ul>
         </div>
       </nav>
