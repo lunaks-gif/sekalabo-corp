@@ -420,19 +420,19 @@ ul { list-style: none; }
 .bento__tag { font-family: var(--latin); font-size: .64rem; font-weight: 600; letter-spacing: .2em; color: var(--coral); }
 .bento--teacher .bento__tag  { color: var(--yellow); }
 .bento--japanese .bento__tag { color: var(--teal); }
-.bento--kids .bento__tag { color: rgba(255,160,100,.8); }
+.bento--kids .bento__tag { color: rgba(255,255,255,.75); }
 
 .bento__title { font-family: var(--sans); font-weight: 700; font-size: clamp(1.2rem, 2.5vw, 1.7rem); line-height: 1.4; color: var(--ink); }
 .bento--kids .bento__title { color: var(--white); font-size: clamp(1.4rem, 3vw, 2.1rem); }
 .bento__desc { color: var(--ink-soft); font-size: .9rem; line-height: 2; }
-.bento--kids .bento__desc { color: rgba(255,255,255,.5); }
+.bento--kids .bento__desc { color: rgba(255,255,255,.82); }
 
 .bento__list { display: flex; flex-direction: column; gap: 9px; }
 .bento__list li {
-  font-size: .86rem; line-height: 1.7; color: rgba(255,255,255,.48);
+  font-size: .86rem; line-height: 1.7; color: rgba(255,255,255,.82);
   display: flex; align-items: flex-start; gap: 10px;
 }
-.bento__list li::before { content: "—"; color: var(--peach); flex-shrink: 0; font-size: .75rem; margin-top: .15em; }
+.bento__list li::before { content: "—"; color: rgba(255,255,255,.5); flex-shrink: 0; font-size: .75rem; margin-top: .15em; }
 
 .bento__link {
   display: inline-flex; align-items: center; gap: 5px; font-size: .86rem; font-weight: 700;
@@ -546,13 +546,13 @@ ul { list-style: none; }
 .contact {
   position: relative; padding: clamp(88px, 13vw, 160px) 0;
   text-align: center; overflow: hidden; color: var(--white);
-  background: linear-gradient(155deg, #1A0804 0%, #3A1208 35%, #6A2008 68%, #3A1208 100%);
+  background: linear-gradient(155deg, #C83810 0%, #E85520 38%, #FF7A38 65%, #FFAA60 100%);
 }
 .contact::before {
   content: ""; position: absolute; inset: 0;
   background:
-    radial-gradient(80% 70% at 50% 110%, rgba(255,160,60,.3),  transparent 58%),
-    radial-gradient(60% 50% at 0%   20%, rgba(109,219,184,.16), transparent 52%);
+    radial-gradient(80% 70% at 50% 0%,   rgba(255,255,255,.12), transparent 55%),
+    radial-gradient(60% 50% at 100% 100%, rgba(109,219,184,.2),  transparent 52%);
 }
 .contact__inner { position: relative; z-index: 1; }
 .contact__title { font-family: var(--sans); font-weight: 700; font-size: clamp(1.8rem, 4.5vw, 3.2rem); line-height: 1.4; letter-spacing: -.01em; color: var(--white); margin: 16px 0 22px; }
