@@ -402,10 +402,10 @@ ul { list-style: none; }
 }
 .bento:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
 .bento--kids {
-  background: linear-gradient(135deg, #1A0804 0%, #2E1208 50%, #4A1A08 100%);
-  border-color: rgba(255,92,68,.2);
+  background: linear-gradient(135deg, #054E6A 0%, #0880B0 45%, #0AACCC 100%);
+  border-color: rgba(10,172,204,.25);
 }
-.bento--kids:hover { box-shadow: 0 16px 56px rgba(80,20,0,.28); }
+.bento--kids:hover { box-shadow: 0 16px 56px rgba(5,78,106,.32); }
 .bento--app { flex-direction: row; align-items: center; gap: clamp(24px, 5vw, 60px); }
 
 .bento__num {
