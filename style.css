@@ -456,7 +456,8 @@ ul { list-style: none; }
 .bento--teacher  { grid-column: 4 / 6; }
 .bento--corp     { grid-column: 1 / 3; }
 .bento--japanese { grid-column: 3 / 6; }
-.bento--app      { grid-column: 1 / 6; }
+.bento--toeic    { grid-column: 1 / 3; }
+.bento--app      { grid-column: 3 / 6; }
 
 .bento {
   border-radius: var(--radius-lg); padding: clamp(28px, 3vw, 44px);
@@ -485,6 +486,7 @@ ul { list-style: none; }
 .bento__tag { font-family: var(--latin); font-size: .64rem; font-weight: 600; letter-spacing: .2em; color: var(--coral); }
 .bento--teacher .bento__tag  { color: var(--yellow); }
 .bento--japanese .bento__tag { color: var(--teal); }
+.bento--toeic .bento__tag    { color: var(--peach); }
 .bento--kids .bento__tag { color: rgba(255,255,255,.75); }
 
 .bento__title { font-family: var(--sans); font-weight: 700; font-size: clamp(1.2rem, 2.5vw, 1.7rem); line-height: 1.4; color: var(--ink); }
@@ -494,10 +496,12 @@ ul { list-style: none; }
 
 .bento__list { display: flex; flex-direction: column; gap: 9px; }
 .bento__list li {
-  font-size: .86rem; line-height: 1.7; color: rgba(255,255,255,.82);
+  font-size: .86rem; line-height: 1.7; color: var(--ink-soft);
   display: flex; align-items: flex-start; gap: 10px;
 }
-.bento__list li::before { content: "—"; color: rgba(255,255,255,.5); flex-shrink: 0; font-size: .75rem; margin-top: .15em; }
+.bento__list li::before { content: "—"; color: var(--coral); flex-shrink: 0; font-size: .75rem; margin-top: .15em; }
+.bento--kids .bento__list li { color: rgba(255,255,255,.82); }
+.bento--kids .bento__list li::before { color: rgba(255,255,255,.5); }
 
 .bento__link {
   display: inline-flex; align-items: center; gap: 5px; font-size: .86rem; font-weight: 700;
@@ -538,6 +542,24 @@ ul { list-style: none; }
 .logo-cell img { max-width: 100%; max-height: clamp(60px, 7vw, 76px); width: auto; height: auto; object-fit: contain; }
 @keyframes logoscroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .clients__note { text-align: center; margin-top: 24px; font-size: .76rem; color: var(--ink-mute); letter-spacing: .04em; }
+
+/* ── Achievement cards ── */
+.achievements {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+  margin-top: clamp(28px, 4vw, 44px);
+}
+.achievement-item {
+  background: rgba(255,255,255,.82); border: 1px solid rgba(255,255,255,.95);
+  border-radius: var(--radius-lg); padding: 24px 28px;
+  display: flex; flex-direction: column; gap: 10px;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.achievement-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.achievement-label {
+  font-family: var(--latin); font-size: .68rem; font-weight: 700; letter-spacing: .16em;
+  color: var(--coral); text-transform: uppercase;
+}
+.achievement-body { font-size: .88rem; line-height: 1.85; color: var(--ink-soft); }
 @media (prefers-reduced-motion: reduce) { .logo-track { animation: none; flex-wrap: wrap; justify-content: center; } }
 
 /* =========================================================
@@ -671,7 +693,9 @@ ul { list-style: none; }
   .bento--teacher  { grid-column: 1; }
   .bento--corp     { grid-column: 2; }
   .bento--japanese { grid-column: 1 / 3; }
-  .bento--app      { grid-column: 1 / 3; }
+  .bento--toeic    { grid-column: 1; }
+  .bento--app      { grid-column: 2; }
+  .achievements    { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 960px) {
   .split, .split--reverse { grid-template-columns: 1fr; gap: 40px; }
@@ -693,8 +717,9 @@ ul { list-style: none; }
   .creed { grid-template-columns: 52px 1fr; gap: 0 16px; padding: 24px 16px; }
   .creed__num { font-size: 1.8rem; }
   .bento-grid { grid-template-columns: 1fr; }
-  .bento--kids, .bento--teacher, .bento--corp, .bento--japanese, .bento--app { grid-column: 1; }
+  .bento--kids, .bento--teacher, .bento--corp, .bento--japanese, .bento--toeic, .bento--app { grid-column: 1; }
   .bento--app { flex-direction: column; gap: 24px; }
+  .achievements { grid-template-columns: 1fr; }
   .contact-cards { grid-template-columns: 1fr; max-width: 380px; margin-inline: auto; }
   .news-item { grid-template-columns: auto 1fr; gap: 8px 12px; }
   .news-item__title { grid-column: 1 / -1; }
